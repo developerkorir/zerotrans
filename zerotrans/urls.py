@@ -21,5 +21,13 @@ from main import views
 
 urlpatterns = [
     path('', views.home, name='home'),
+    path('about', views.about, name='about'),
+    path('services', views.services, name='services'),
+    path('pricing', views.pricing, name='pricing'),
+    path('contact', views.contact, name='contact'),
+    path('get-a-quote', views.quote, name='quote'),
+    path('terms-of-service', views.terms_of_service, name='termsofservice'),
+    path('privacy-policy', views.privacy_policy, name='privacy'),
+    path('service-details', views.service_details, name='service_details'),
     path('admin/', admin.site.urls),
 ]
