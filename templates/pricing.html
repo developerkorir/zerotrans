@@ -2,156 +2,144 @@
 {% load static %}
 {% block content %}
 
-  <main id="main">
+	<main id="main">
+		<div class="breadcrumbs">
+			<div class="page-header d-flex align-items-center"
+				 style="background-image: url('{% static 'img/page-header.jpg' %}');">
+				<div class="container position-relative">
+					<div class="row d-flex justify-content-center">
+						<div class="col-lg-6 text-center">
+							<h2>Pricing</h2>
+							<p>Choose the plan that fits your needs. Our pricing is designed to offer flexibility and
+								value for every user.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<nav>
+				<div class="container">
+					<ol>
+						<li><a href="{% url 'home' %}">Home</a></li>
+						<li>Pricing</li>
+					</ol>
+				</div>
+			</nav>
+		</div>
+
+		<section id="pricing" class="pricing">
+			<div class="container" data-aos="fade-up">
+				<div class="row gy-4">
+					<div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+						<div class="pricing-item">
+							<h3>Free Plan</h3>
+							<h4><sup>$</sup>0<span> / month</span></h4>
+							<ul>
+								<li><i class="bi bi-check"></i> Basic features included</li>
+								<li><i class="bi bi-check"></i> Limited access to advanced tools</li>
+								<li><i class="bi bi-check"></i> Community support</li>
+								<li class="na"><i class="bi bi-x"></i> <span>No access to premium features</span></li>
+								<li class="na"><i class="bi bi-x"></i> <span>No priority customer support</span></li>
+							</ul>
+							<a href="#" class="buy-btn">Get Started</a>
+						</div>
+					</div>
+					<div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+						<div class="pricing-item featured">
+							<h3>Business Plan</h3>
+							<h4><sup>$</sup>29<span> / month</span></h4>
+							<ul>
+								<li><i class="bi bi-check"></i> All features from Free Plan</li>
+								<li><i class="bi bi-check"></i> Full access to advanced tools</li>
+								<li><i class="bi bi-check"></i> Priority customer support</li>
+								<li><i class="bi bi-check"></i> Exclusive premium features</li>
+								<li><i class="bi bi-check"></i> Regular software updates</li>
+							</ul>
+							<a href="#" class="buy-btn">Get Started</a>
+						</div>
+					</div>
+					<div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+						<div class="pricing-item">
+							<h3>Developer Plan</h3>
+							<h4><sup>$</sup>49<span> / month</span></h4>
+							<ul>
+								<li><i class="bi bi-check"></i> All features from Business Plan</li>
+								<li><i class="bi bi-check"></i> Access to developer tools and APIs</li>
+								<li><i class="bi bi-check"></i> Personalized developer support</li>
+								<li><i class="bi bi-check"></i> Beta program access</li>
+								<li><i class="bi bi-check"></i> Dedicated account manager</li>
+							</ul>
+							<a href="#" class="buy-btn">Get Started</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ======= Horizontal Pricing Section ======= -->
+		<section id="horizontal-pricing" class="horizontal-pricing pt-0">
+			<div class="container" data-aos="fade-up">
+				<div class="section-header">
+					<span>Horizontal Pricing</span>
+					<h2>Horizontal Pricing</h2>
+				</div>
+				<div class="row gy-4 pricing-item" data-aos="fade-up" data-aos-delay="100">
+					<div class="col-lg-3 d-flex align-items-center justify-content-center">
+						<h3>Free Plan</h3>
+					</div>
+					<div class="col-lg-3 d-flex align-items-center justify-content-center">
+						<h4><sup>$</sup>0<span> / month</span></h4>
+					</div>
+					<div class="col-lg-3 d-flex align-items-center justify-content-center">
+						<ul>
+							<li><i class="bi bi-check"></i> Basic features included</li>
+							<li class="na"><i class="bi bi-x"></i> <span>No access to premium features</span></li>
+							<li class="na"><i class="bi bi-x"></i> <span>No priority customer support</span></li>
+						</ul>
+					</div>
+					<div class="col-lg-3 d-flex align-items-center justify-content-center">
+						<div class="text-center"><a href="#" class="buy-btn">Get Started</a></div>
+					</div>
+				</div>
+				<div class="row gy-4 pricing-item featured mt-4" data-aos="fade-up" data-aos-delay="200">
+					<div class="col-lg-3 d-flex align-items-center justify-content-center">
+						<h3>Business Plan</h3>
+					</div>
+					<div class="col-lg-3 d-flex align-items-center justify-content-center">
+						<h4><sup>$</sup>29<span> / month</span></h4>
+					</div>
+					<div class="col-lg-3 d-flex align-items-center justify-content-center">
+						<ul>
+							<li><i class="bi bi-check"></i> All features from Free Plan</li>
+							<li><i class="bi bi-check"></i> Full access to advanced tools</li>
+							<li class="na"><i class="bi bi-x"></i> <span>No access to premium features</span></li>
+						</ul>
+					</div>
+					<div class="col-lg-3 d-flex align-items-center justify-content-center">
+						<div class="text-center"><a href="#" class="buy-btn">Get Started</a></div>
+					</div>
+				</div>
+				<div class="row gy-4 pricing-item mt-4" data-aos="fade-up" data-aos-delay="300">
+					<div class="col-lg-3 d-flex align-items-center justify-content-center">
+						<h3>Developer Plan</h3>
+					</div>
+					<div class="col-lg-3 d-flex align-items-center justify-content-center">
+						<h4><sup>$</sup>49<span> / month</span></h4>
+					</div>
+					<div class="col-lg-3 d-flex align-items-center justify-content-center">
+						<ul>
+							<li><i class="bi bi-check"></i> All features from Business Plan</li>
+							<li><i class="bi bi-check"></i> Access to developer tools and APIs</li>
+							<li class="na"><i class="bi bi-x"></i> <span>No access to premium features</span></li>
+						</ul>
+					</div>
+					<div class="col-lg-3 d-flex align-items-center justify-content-center">
+						<div class="text-center"><a href="#" class="buy-btn">Get Started</a></div>
+					</div>
+				</div>
+			</div>
+		</section><!-- End Horizontal Pricing Section -->
+	</main>
 
 
-    <div class="breadcrumbs">
-      <div class="page-header d-flex align-items-center" style="background-image: url('{% static 'img/page-header.jpg' %}');">
-        <div class="container position-relative">
-          <div class="row d-flex justify-content-center">
-            <div class="col-lg-6 text-center">
-              <h2>Pricing</h2>
-              <p>Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo odio sint voluptas consequatur ut a odio voluptatem. Sit dolorum debitis veritatis natus dolores. Quasi ratione sint. Sit quaerat ipsum dolorem.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <nav>
-        <div class="container">
-          <ol>
-            <li><a href="{% url 'home' %}">Home</a></li>
-            <li>Pricing</li>
-          </ol>
-        </div>
-      </nav>
-    </div>
-
-
-    <section id="pricing" class="pricing">
-      <div class="container" data-aos="fade-up">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="pricing-item">
-              <h3>Free Plan</h3>
-              <h4><sup>$</sup>0<span> / month</span></h4>
-              <ul>
-                <li><i class="bi bi-check"></i> Quam adipiscing vitae proin</li>
-                <li><i class="bi bi-check"></i> Nec feugiat nisl pretium</li>
-                <li><i class="bi bi-check"></i> Nulla at volutpat diam uteera</li>
-                <li class="na"><i class="bi bi-x"></i> <span>Pharetra massa massa ultricies</span></li>
-                <li class="na"><i class="bi bi-x"></i> <span>Massa ultricies mi quis hendrerit</span></li>
-              </ul>
-              <a href="#" class="buy-btn">Buy Now</a>
-            </div>
-          </div>
-
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-            <div class="pricing-item featured">
-              <h3>Business Plan</h3>
-              <h4><sup>$</sup>29<span> / month</span></h4>
-              <ul>
-                <li><i class="bi bi-check"></i> Quam adipiscing vitae proin</li>
-                <li><i class="bi bi-check"></i> Nec feugiat nisl pretium</li>
-                <li><i class="bi bi-check"></i> Nulla at volutpat diam uteera</li>
-                <li><i class="bi bi-check"></i> Pharetra massa massa ultricies</li>
-                <li><i class="bi bi-check"></i> Massa ultricies mi quis hendrerit</li>
-              </ul>
-              <a href="#" class="buy-btn">Buy Now</a>
-            </div>
-          </div>
-
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
-            <div class="pricing-item">
-              <h3>Developer Plan</h3>
-              <h4><sup>$</sup>49<span> / month</span></h4>
-              <ul>
-                <li><i class="bi bi-check"></i> Quam adipiscing vitae proin</li>
-                <li><i class="bi bi-check"></i> Nec feugiat nisl pretium</li>
-                <li><i class="bi bi-check"></i> Nulla at volutpat diam uteera</li>
-                <li><i class="bi bi-check"></i> Pharetra massa massa ultricies</li>
-                <li><i class="bi bi-check"></i> Massa ultricies mi quis hendrerit</li>
-              </ul>
-              <a href="#" class="buy-btn">Buy Now</a>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ======= Horizontal Pricing Section ======= -->
-    <section id="horizontal-pricing" class="horizontal-pricing pt-0">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-header">
-          <span>Horizontal Pricing</span>
-          <h2>Horizontal Pricing</h2>
-
-        </div>
-
-        <div class="row gy-4 pricing-item" data-aos="fade-up" data-aos-delay="100">
-          <div class="col-lg-3 d-flex align-items-center justify-content-center">
-            <h3>Free Plan</h3>
-          </div>
-          <div class="col-lg-3 d-flex align-items-center justify-content-center">
-            <h4><sup>$</sup>0<span> / month</span></h4>
-          </div>
-          <div class="col-lg-3 d-flex align-items-center justify-content-center">
-            <ul>
-              <li><i class="bi bi-check"></i> Quam adipiscing vitae proin</li>
-              <li><i class="bi bi-check"></i> Nulla at volutpat diam uteera</li>
-              <li class="na"><i class="bi bi-x"></i> <span>Pharetra massa massa ultricies</span></li>
-            </ul>
-          </div>
-          <div class="col-lg-3 d-flex align-items-center justify-content-center">
-            <div class="text-center"><a href="#" class="buy-btn">Buy Now</a></div>
-          </div>
-        </div>
-
-        <div class="row gy-4 pricing-item featured mt-4" data-aos="fade-up" data-aos-delay="200">
-          <div class="col-lg-3 d-flex align-items-center justify-content-center">
-            <h3>Business Plan</h3>
-          </div>
-          <div class="col-lg-3 d-flex align-items-center justify-content-center">
-            <h4><sup>$</sup>29<span> / month</span></h4>
-          </div>
-          <div class="col-lg-3 d-flex align-items-center justify-content-center">
-            <ul>
-              <li><i class="bi bi-check"></i> Quam adipiscing vitae proin</li>
-              <li><i class="bi bi-check"></i> <strong>Nec feugiat nisl pretium</strong></li>
-              <li><i class="bi bi-check"></i> Nulla at volutpat diam uteera</li>
-            </ul>
-          </div>
-          <div class="col-lg-3 d-flex align-items-center justify-content-center">
-            <div class="text-center"><a href="#" class="buy-btn">Buy Now</a></div>
-          </div>
-        </div>
-
-        <div class="row gy-4 pricing-item mt-4" data-aos="fade-up" data-aos-delay="300">
-          <div class="col-lg-3 d-flex align-items-center justify-content-center">
-            <h3>Developer Plan</h3>
-          </div>
-          <div class="col-lg-3 d-flex align-items-center justify-content-center">
-            <h4><sup>$</sup>49<span> / month</span></h4>
-          </div>
-          <div class="col-lg-3 d-flex align-items-center justify-content-center">
-            <ul>
-              <li><i class="bi bi-check"></i> Quam adipiscing vitae proin</li>
-              <li><i class="bi bi-check"></i> Nec feugiat nisl pretium</li>
-              <li><i class="bi bi-check"></i> Nulla at volutpat diam uteera</li>
-            </ul>
-          </div>
-          <div class="col-lg-3 d-flex align-items-center justify-content-center">
-            <div class="text-center"><a href="#" class="buy-btn">Buy Now</a></div>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End Horizontal Pricing Section -->
-
-  </main>
 
 {% endblock %}
